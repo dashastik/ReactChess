@@ -1,28 +1,35 @@
 
 .board {
-  width: max-content;
+  width: 100%;
+  margin-top: 50px;
   display: grid;
-  grid-template-rows: repeat(8, 100px);
+  justify-content: center;
+  grid-template-rows: repeat(8, 80px);
 }
 
 .board__row {
   width: max-content;
   display: grid;
-  grid-template-columns: repeat(8, 100px);
+  grid-template-columns: repeat(8, 80px);
 }
 
 .board__ceil {
   border: 1px solid #111111;
-  
 }
 
 .board__ceil:hover {
   background-color: gray;
-  box-shadow: 0 0 25px rgba(52, 52, 53, 0.5);
+  box-shadow: 0 0 25px rgba(18, 18, 19, 0.822);
+  border: 2px solid #111111;
 }
 
 .board__ceil--black {
   background-color: #111111;
-  background-image: url(../image/Background.jpg);
+  background-image: url(../image/Dark.jpg);
+  background-size: cover;
+}
+
+.board__ceil--white {
+  background-image: url(../image/Light.jpg);
   background-size: cover;
 }

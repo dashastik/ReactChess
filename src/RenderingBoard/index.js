@@ -15,7 +15,7 @@ const RenderingBoard = () => {
             {
               row.map((column, indexColumn) => (
                 <div
-                  className={"board__ceil" + ((indexRow + indexColumn) % 2  === 0 ? "" : " board__ceil--black")}
+                  className={"board__ceil" + ((indexRow + indexColumn) % 2 === 0 ? " board__ceil--white" : " board__ceil--black")}
                   onClick={() => handleClick(indexRow, indexColumn)}
                 >
 
