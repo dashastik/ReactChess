@@ -1,4 +1,5 @@
 import gameManager from "../game"
+import RenderingFigureInBoard from "../RenderingFigureInBoard"
 import "./index.css"
 
 const RenderingBoard = () => {
@@ -6,6 +7,7 @@ const RenderingBoard = () => {
     gameManager.placeFigure(indexRow, indexColumn)
     console.log(gameManager.board.field)
   }
+
 
   return (
     <div className="board">
@@ -18,7 +20,9 @@ const RenderingBoard = () => {
                   className={"board__ceil" + ((indexRow + indexColumn) % 2 === 0 ? " board__ceil--white" : " board__ceil--black")}
                   onClick={() => handleClick(indexRow, indexColumn)}
                 >
-
+                  {column !== null &&
+                    <RenderingFigureInBoard figure={column}/>
+                  }
                 </div>
               ))
             }

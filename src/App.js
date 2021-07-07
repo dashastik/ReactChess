@@ -1,12 +1,12 @@
 import RenderingBoard from "./RenderingBoard"
-import RenderingFigure from "./RenderingFigure"
+import RenderingFigures from "./RenderingFigures"
 
 const App = () => {
 
   return (
     <>
     <RenderingBoard/>
-    <RenderingFigure/>
+    <RenderingFigures/>
       
     </>
   );

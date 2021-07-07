@@ -1,7 +1,7 @@
 import gameManager from "../game"
 import "./index.css"
 
-const RenderingFigure = () => {
+const RenderingFigures = () => {
   return (
     <div className="figures">
       <div className="figures__black">
@@ -10,23 +10,23 @@ const RenderingFigure = () => {
           <i className="fas fa-chess-pawn figure-black"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("black")}>
+          onClick={() => gameManager.createKnight("black")}>
           <i className="fas fa-chess-knight figure-black"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("black")}>
+          onClick={() => gameManager.createBishop("black")}>
           <i className="fas fa-chess-bishop figure-black"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("black")}>
+          onClick={() => gameManager.createRook("black")}>
           <i className="fas fa-chess-rook figure-black"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("black")}>
+          onClick={() => gameManager.createQueen("black")}>
           <i className="fas fa-chess-queen figure-black"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("black")}>
+          onClick={() => gameManager.createKing("black")}>
           <i className="fas fa-chess-king figure-black"></i>
         </div>
       </div>
@@ -37,23 +37,23 @@ const RenderingFigure = () => {
           <i className="fas fa-chess-pawn figure-white"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("white")}>
+          onClick={() => gameManager.createKnight("white")}>
           <i className="fas fa-chess-knight figure-white"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("white")}>
+          onClick={() => gameManager.createBishop("white")}>
           <i className="fas fa-chess-bishop figure-white"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("white")}>
+          onClick={() => gameManager.createRook("white")}>
           <i className="fas fa-chess-rook figure-white"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("white")}>
+          onClick={() => gameManager.createQueen("white")}>
           <i className="fas fa-chess-queen figure-white"></i>
         </div>
         <div className="figure"
-          onClick={() => gameManager.createPawn("white")}>
+          onClick={() => gameManager.createKing("white")}>
           <i className="fas fa-chess-king figure-white"></i>
         </div>
       </div>
@@ -62,4 +62,4 @@ const RenderingFigure = () => {
   )
 }
 
-export default RenderingFigure
+export default RenderingFigures

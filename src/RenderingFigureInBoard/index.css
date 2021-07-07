@@ -1,0 +1,11 @@
+.figure-in-board {
+  width: 80px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.fas {
+  font-size: 40px;
+  padding: 5px;
+}
