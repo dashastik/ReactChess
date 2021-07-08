@@ -24,13 +24,14 @@
   justify-content: center;
 }
 
-.fas {
+
+.set-figure {
   font-size: 40px;
   padding: 5px;
 }
 
 
-.fas:hover {
+.set-figure:hover {
   box-shadow: 0 0 25px rgba(18, 18, 19, 0.822);
 }
 

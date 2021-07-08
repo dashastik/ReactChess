@@ -3,9 +3,9 @@
   display: grid;
   align-content: center;
   justify-content: center;
+  
 }
 
 .fas {
-  font-size: 40px;
-  padding: 5px;
+  font-size: 50px;
 }
