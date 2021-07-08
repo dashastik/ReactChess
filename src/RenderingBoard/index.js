@@ -1,13 +1,17 @@
+import { useState } from "react"
 import gameManager from "../game"
 import RenderingFigureInBoard from "../RenderingFigureInBoard"
 import "./index.css"
 
 const RenderingBoard = () => {
+
+  const [count, setCount] = useState(0)
+
   const handleClick = (indexRow, indexColumn) => {
     gameManager.placeFigure(indexRow, indexColumn)
+    setCount(count + 1)
     console.log(gameManager.board.field)
   }
-
 
   return (
     <div className="board">
