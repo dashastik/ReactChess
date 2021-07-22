@@ -25,7 +25,7 @@ test("put figure in field: 8, 8", () => {
 })
 
 
-test("put figure in field: -1, -1", () => {
+test("put figure in field: -10, -20", () => {
   const gameBoard = new GameBoard()
   expect(() => gameBoard.putFigure("Pawn", -10, -20)).toThrow(FieldDoesNotExist)
 })
